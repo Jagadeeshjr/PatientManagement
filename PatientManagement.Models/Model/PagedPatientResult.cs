@@ -1,6 +1,6 @@
 ﻿using PatientManagement.Model;
 
-namespace PatientManagement
+namespace PatientManagement.Models.Model
 {
     public class PagedPatientResult
     {

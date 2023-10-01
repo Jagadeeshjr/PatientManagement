@@ -2,9 +2,10 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using PatientManagement.BusinessLogic.Repository.Contracts;
+using PatientManagement.BusinessLogic.Repository.Implementation;
 using PatientManagement.Data;
-using PatientManagement.Model;
-using PatientManagement.Repository;
+using PatientManagement.Models.Model.Authentication;
 using System.Text;
 
 namespace PatientManagement

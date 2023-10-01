@@ -1,7 +1,8 @@
 ﻿using Microsoft.AspNetCore.JsonPatch;
 using PatientManagement.Model;
+using PatientManagement.Models.Model;
 
-namespace PatientManagement.Repository
+namespace PatientManagement.BusinessLogic.Repository.Contracts
 {
     public interface IPatientRepository
     {

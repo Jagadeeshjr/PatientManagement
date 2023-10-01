@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace PatientManagement.Model
+namespace PatientManagement.Models.Model.Authentication
 {
     public class ApplicationUser : IdentityUser
     {

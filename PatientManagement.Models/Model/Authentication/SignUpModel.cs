@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace PatientManagement.Model
+namespace PatientManagement.Models.Model.Authentication
 {
     public class SignUpModel
     {

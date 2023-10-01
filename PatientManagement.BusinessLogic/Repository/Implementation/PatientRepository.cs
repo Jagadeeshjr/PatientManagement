@@ -1,5 +1,4 @@
 ﻿using LazyCache;
-using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
 using PatientManagement.Caching;
@@ -8,9 +7,11 @@ using PatientManagement.Model;
 using System.Reflection;
 using System.Text;
 using System.Linq.Dynamic.Core;
+using PatientManagement.BusinessLogic.Repository.Contracts;
+using Microsoft.AspNetCore.JsonPatch;
+using PatientManagement.Models.Model;
 
-
-namespace PatientManagement.Repository
+namespace PatientManagement.BusinessLogic.Repository.Implementation
 {
     public class PatientRepository : IPatientRepository
     {
@@ -114,7 +115,7 @@ namespace PatientManagement.Repository
 
         public async Task<Patient> GetPatientByIdAsync(int id)
         {
-            if(!_cacheProvider.TryGetValue(CacheKey.Patient, out Patient patient))
+            if (!_cacheProvider.TryGetValue(CacheKey.Patient, out Patient patient))
             {
                 patient = await _context.Patients.FindAsync(id);
 

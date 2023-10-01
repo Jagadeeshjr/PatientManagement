@@ -1,11 +1,13 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
-using PatientManagement.Model;
+using PatientManagement.BusinessLogic.Repository.Contracts;
+using PatientManagement.Models.Model.Authentication;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace PatientManagement.Repository
+namespace PatientManagement.BusinessLogic.Repository.Implementation
 {
     public class AccountRepository : IAccountRepository
     {

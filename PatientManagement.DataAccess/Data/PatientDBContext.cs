@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using PatientManagement.Model;
+using PatientManagement.Models.Model.Authentication;
 
 namespace PatientManagement.Data
 {

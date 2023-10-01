@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PatientManagement.Model;
-using PatientManagement.Repository;
+using PatientManagement.BusinessLogic.Repository.Contracts;
+using PatientManagement.Models.Model.Authentication;
 
 namespace PatientManagement.Controllers
 {

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using PatientManagement.Model;
+using PatientManagement.Models.Model.Authentication;
 
-namespace PatientManagement.Repository
+namespace PatientManagement.BusinessLogic.Repository.Contracts
 {
     public interface IAccountRepository
     {

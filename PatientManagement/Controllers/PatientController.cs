@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
+using PatientManagement.BusinessLogic.Repository.Contracts;
 using PatientManagement.Model;
-using PatientManagement.Repository;
 
 namespace PatientManagement.Controllers
 {
